@@ -1,0 +1,166 @@
+body{
+    background: #ffffff;
+    font-family: 'Lora', serif ;
+}
+
+/*Flex Box struttura*/
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    nav {
+      padding: 5px;
+    }
+  }
+
+/*Header nav*/
+header{
+    position: relative;
+    height: 600px;
+    background-image: url('img/museo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    header {
+      height: 500px;
+    }
+  }
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Flex Box*/
+a{
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 20px;
+    font-family: 'Megrim', cursive;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    a {
+      font-size: medium;
+    }
+  }
+
+a.button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#txt_bg{
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-family: 'Megrim', cursive;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    #txt_bg {
+      font-size: medium;
+    }
+  }
+
+section{
+    height: 675px;
+    background: rgb(0, 85, 255);
+    text-align: center;
+}
+
+/*Footer*/
+footer{ 
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    height: 50px;
+}
+
+/*Testo footer*/
+.ft{
+    font-size: large;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-style: oblique;
+}
+
+.avatar{
+    position: relative;
+    top: -50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.txt_av{
+    position: relative;
+    bottom: 45px;
+    text-align: center;
+    color: #ffffff;
+    font-style: oblique;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+
+#num{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    margin-left: 20;
+    text-align: left;
+    flex-direction: column;
+}
+
+.testo{
+    top: 60px;
+    position: relative;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+hr{
+    position: relative;
+    top: -40px;
+    width: 250px;
+    opacity: 25%;
+}
